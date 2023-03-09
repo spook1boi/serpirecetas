@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SerpiRecetas</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <!--ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/2f501335b1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #24252a;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="logo" src="../imagenes/Serpiente.png">SerpiRecetas</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./recetas.html">Recetas</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Por Dieta
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./sin-gluten.html">Sin gluten</a></li>
+                  <li><a class="dropdown-item" href="./sin-huevo.html">Sin huevo</a></li>
+                  <li><a class="dropdown-item" href="./sin-lacteos.html">Sin lácteos</a></li>
+                </ul>
+
+              </li>
+              <li class="nav-item"><a class="nav-link" href="./quienes-somos.html">Quiénes somos</a></li>
+
+              <li> <a class="cta" href="./contacto.html"><button>Contacto</button></a> </li>
+              
+            </ul>
+
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <div class="content">
+
+        <h1 class="contacto">Contacto</h1>
+
+        <div class="contact-wrapper">
+            <div class="formulario">
+            <h3>¡Envía un mensaje!</h3>
+            <form action="">
+                <p>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </p>
+                <p>
+                    <label for="asunto">Asunto</label>
+                    <input type="text" name="asunto" id="asunto">
+                </p>
+                <p>
+                    <label for="teléfono">Teléfono</label>
+                    <input type="tel" name="Teléfono" id="teléfono">
+                </p>
+                <p class="block">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" rows="3"></textarea>
+                </p>
+                <p class="block">
+                    <button type="submit">
+                        Enviar
+                    </button>
+                </p>
+            </form>
+            </div>
+            <div class="contact-info">
+                <h4>Más información</h4>
+                <ul>
+                    <li><a href="https://wa.me/56999221222"><i class="fa-brands fa-whatsapp"></i> +569 99221222</a></li>
+                    <li><a href="https://www.facebook.com/Sr.mantequilla/"><i class="fa-brands fa-facebook"></i> Edu Zuleta</a></li>
+                    <li><a href="https://www.instagram.com/spook1_boi/"><i class="fa-brands fa-instagram"></i> spook1_boi</a></li>
+                    <li><i class="fa-regular fa-envelope"></i> ed.zuleta_@live.cl</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia amet veritatis cumque, dignissimos fuga officia, harum quae quibusdam provident totam aliquam doloribus quasi corrupti explicabo, vero ipsum. Ab, praesentium vero?</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+
+        <img src="../imagenes/Serpiente.png" alt="#" class="logo2"> 
+        
+        <ul class="footer-menu">
+            <li class="menu-item"> <a href="../index.html">Inicio</a></li>
+            <li class="menu-item"> <a href="./recetas.html">Recetas</a></li>
+            <li class="menu-item"> <a href="./quienes-somos.html">Quiénes somos</a></li>
+            <li class="menu-item"> <a href="./contacto.html">Contacto</a></li>
+        </ul>
+
+        <span class="copyright">&copy;2023, Serpi Recetas. Todos los derechos reservados.</span> 
+
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(153, 132, 212);
+    color: #edf0f1;
+    padding: 0;
+}
+
+/*INDEX*/
+
+.logo {
+    width: 75px;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+button {
+    margin-left: 30px;
+    padding: 9px 25px;
+    background-color: rgba(98, 76, 171,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover,
+button:focus {
+    background-color: rgba(98, 76, 171,0.8);
+    color: #24252a;
+}
+
+.tarjetas {
+    display: flex;
+    padding: 40px;
+    gap: 40px;
+}
+
+.card1 {
+    background-color: rgb(98, 76, 171);
+    padding: 20px;
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card_image {
+    width: 100%;
+}
+
+/*RECETAS*/
+
+.card {
+    background-color: rgb(98, 76, 171);
+    padding: 20px;
+    border-radius: 16px;
+}
+/* .card-img-top{
+    object-fit: cover;
+    object-position:center;
+} */
+
+/*CONTACTO*/
+
+h1 {
+    padding: 30px;
+    text-align: center;
+}
+
+.content {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:#edf0f1;
+    text-decoration: none;
+}
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255,255,255, .3);
+}
+
+.contact-wrapper > * {
+    padding: 2em;
+}
+
+.formulario {
+    background: #222222;
+}
+
+.formulario form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.formulario form .block {
+    grid-column: 1 / 3;
+}
+
+.formulario form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.formulario form button,
+.formulario form input,
+.formulario form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    border-bottom: 1px solid rgb(98, 76, 171);
+    outline: 0;
+    color: #edf0f1;
+}
+
+.formulario form button {
+    margin: auto;
+    padding: 1em;
+    background-color: rgba(98, 76, 171,1);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.formulario button:hover,
+.formulario button:focus{
+    background-color: rgba(98, 76, 171,0.8);
+    color: #24252a;
+}
+
+.contact-info {
+    background: #252525;
+}
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
+    text-align: left;
+    margin: 1em;
+}
+
+.contact-info ul li:hover{
+    color: rgb(98, 76, 171);
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    padding: .3em;
+}
+
+/*FOOTER*/
+
+footer {
+    width: auto;
+    padding: 20px;
+    background-color: #24252a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo2 {
+    width: 100px;
+    cursor: pointer;
+}
+
+.footer-menu {
+    list-style-type: none;
+    color: #edf0f1;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.menu-item {
+    list-style: none;
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.menu-item:hover {
+    opacity: 1;
+}
+
+.copyright {
+    color: #edf0f1;
+    opacity: 0.3;
+    text-align: center;
+}
+
+ @media (max-width:600px){
+    body{
+        background-color: #24252a;
+    }
+    .card {
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card1 {
+        background-color: #24252a;
+        
+        display: flex;
+        flex-direction: column;
+    }
+
+} 
+
