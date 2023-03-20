@@ -1,0 +1,23 @@
+@media (max-width:600px) {
+	body {
+		background-color: $background-color_7;
+		color: $color_2;
+	}
+	.card {
+		width: 50px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.titulo {
+		font-size: 30px;
+		background-color: $background-color_6;
+		color: $color_2;
+		border-radius: 20px;
+	}
+
+	.content-coment {
+		font-size: 20px;
+		color: $color_2;
+	}
+}

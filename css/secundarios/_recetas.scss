@@ -1,0 +1,27 @@
+.titulo {
+	color: $color_1;
+	font-size: 70px;
+	padding: 30px;
+	text-align: center;
+}
+.content-coment {
+	color: $color_1;
+	text-align: justify;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 800px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	padding: 20px;
+}
+.content-rec {
+	background-color: $background-color_6;
+	color: $color_4;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 800px;
+	margin-top: 10px;
+	margin-bottom: 50px;
+	padding: 20px;
+	border-radius: 16px;
+}
