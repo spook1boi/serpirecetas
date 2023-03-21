@@ -4,6 +4,32 @@
 	padding: 30px;
 	text-align: center;
 }
+
+.card-r {
+	color: $color_2;
+	background-color: $background-color_4;
+	padding: 20px;
+	width: 18rem;
+	border-radius: 16px;
+	text-align: center;
+}
+
+.img-fluid {
+	padding-top: 25px;
+}
+
+.card-link {
+	color: $color_2;
+	&:hover {
+		color: $color_3;
+	}
+}
+
+.btn-info {
+	background-color: $background-color_5;
+	text-align: center;
+}
+
 .content-coment {
 	color: $color_1;
 	text-align: justify;
@@ -14,6 +40,7 @@
 	margin-bottom: 10px;
 	padding: 20px;
 }
+
 .content-rec {
 	background-color: $background-color_6;
 	color: $color_4;

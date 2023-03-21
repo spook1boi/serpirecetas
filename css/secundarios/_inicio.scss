@@ -1,19 +1,28 @@
+.container-fluid-c{
+	width: 700px;
+	margin: auto;
+}
+
 .card {
 	color: $color_2;
 	background-color: $background-color_4;
 	padding: 20px;
+	width: 540px;
 	border-radius: 16px;
 	text-align: center;
 }
+
 .img-fluid {
 	padding-top: 25px;
 }
+
 .card-link {
 	color: $color_2;
 	&:hover {
 		color: $color_3;
 	}
 }
+
 .btn-info {
 	background-color: $background-color_5;
 	text-align: center;

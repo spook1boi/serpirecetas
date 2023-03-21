@@ -14,6 +14,10 @@ a {
   text-decoration: none;
 }
 
+.navbar {
+  background-color: #24252a;
+}
+
 .logo {
   width: 75px;
   margin-right: auto;
@@ -43,10 +47,16 @@ button:focus {
   color: #24252a;
 }
 
+.container-fluid-c {
+  width: 700px;
+  margin: auto;
+}
+
 .card {
   color: #edf0f1;
   background-color: #fb924b;
   padding: 20px;
+  width: 540px;
   border-radius: 16px;
   text-align: center;
 }
@@ -71,6 +81,31 @@ button:focus {
   color: #24252a;
   font-size: 70px;
   padding: 30px;
+  text-align: center;
+}
+
+.card-r {
+  color: #edf0f1;
+  background-color: #fb924b;
+  padding: 20px;
+  width: 18rem;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.img-fluid {
+  padding-top: 25px;
+}
+
+.card-link {
+  color: #edf0f1;
+}
+.card-link:hover {
+  color: #cee7e6;
+}
+
+.btn-info {
+  background-color: #cee7e6;
   text-align: center;
 }
 

@@ -5,6 +5,7 @@
 	padding: 1.5em;
 	color: $color_2;
 }
+
 li {
 	font-family: $font-family_1;
 	font-weight: 500;
@@ -12,12 +13,14 @@ li {
 	color: $color_2;
 	text-decoration: none;
 }
+
 a {
 	font-family: $font-family_1;
 	font-weight: 500;
 	font-size: 16px;
 	color: $color_2;
 }
+
 .contact-wrapper {
 	display: grid;
 	grid-template-columns: 2fr 1fr;
@@ -26,6 +29,7 @@ a {
 		padding: 2em;
 	}
 }
+
 .formulario {
 	background: #222222;
 	form {
@@ -83,6 +87,7 @@ a {
 		}
 	}
 }
+
 .contact-info {
 	background: #252525;
 	h4 {
@@ -106,6 +111,7 @@ a {
 		margin: 1em;
 	}
 }
+
 .icon-color {
 	i {
 		margin: 10px 5px 0;
