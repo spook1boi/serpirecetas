@@ -132,100 +132,142 @@ button:focus {
   border-radius: 16px;
 }
 
-.creadores {
+.container-cre {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 950px;
   width: 100%;
-  height: 90vh;
+  overflow: hidden;
+  padding: 80px 0;
 }
-.creadores h1 {
+.container-cre .main-card {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 55px;
-  margin-bottom: 5px;
+  justify-content: space-evenly;
+  width: 200%;
+  transition: 1s;
 }
-.creadores .creadores-box {
-  width: 95%;
-  margin: 0 auto;
+.container-cre .main-card .cards {
+  width: calc(50% - 10px);
   display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: 13%;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  justify-content: space-between;
 }
-.creadores .creadores-box .perfil {
-  width: 320px;
-  height: 320px;
+.container-cre .button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+#two:checked ~ .main-card {
+  margin-left: -100%;
+}
+#two:checked ~ .button .one {
+  width: 15px;
+}
+#two:checked ~ .button .two {
+  width: 35px;
+}
+
+.main-card .cards .card-cre {
+  width: calc(33.3333333333% - 10px);
+  background: #FDFFFC;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+.main-card .cards .card-cre:hover {
+  transform: translateY(-15px);
+}
+
+.cards .card-cre .content-cre {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cards .card-cre .content-cre .img {
+  height: 130px;
+  width: 130px;
   border-radius: 50%;
-  margin: 0 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-  transition: 0.4s;
+  padding: 3px;
+  background: #FA7921;
+  margin-bottom: 14px;
 }
-.creadores .creadores-box .perfil:hover {
-  border-radius: 20px;
-  height: 320px;
-}
-.creadores .creadores-box .perfil:hover .info {
-  top: 60%;
-}
-.creadores .creadores-box .perfil img {
-  width: 250px;
-  height: 250px;
+
+.card-cre .content-cre .img img {
+  height: 100%;
+  width: 100%;
+  border: 3px solid #FDFFFC;
+  border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+}
+.card-cre .content-cre .name {
+  font-size: 20px;
+  font-weight: 500;
+  color: #24252a;
+}
+.card-cre .content-cre .job {
+  font-size: 20px;
+  color: #24252a;
+}
+.card-cre .content-cre .media-icons {
+  margin-top: 10px;
+  display: flex;
+}
+
+.media-icons a {
+  text-align: center;
+  line-height: 33px;
+  height: 35px;
+  width: 35px;
+  margin: 0 4px;
+  font-size: 14px;
+  color: #edf0f1;
   border-radius: 50%;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-  z-index: 2;
-  transition: 0.4s;
+  border: 2px solid transparent;
+  background: #FA7921;
+  transition: all 0.3s ease;
 }
-.creadores .creadores-box .perfil img:hover {
+.media-icons a:hover {
+  color: #24252a;
+  background-color: #fffeeb;
+}
+
+.button label {
+  height: 15px;
+  width: 15px;
   border-radius: 20px;
-  margin-top: -230px;
-}
-.creadores .creadores-box .perfil .info {
-  position: absolute;
-  text-align: center;
-  top: 25%;
-  transition: 0.4s;
-}
-.creadores .creadores-box .perfil .info .name {
-  color: #FA7921;
-  margin-bottom: 15px;
-}
-.creadores .creadores-box .perfil .info .name .pag {
-  width: 70px;
-  text-align: center;
-  margin: 0 auto 10px;
-}
-.creadores .creadores-box .perfil .info .icon-color i {
-  color: #24252a;
-  padding-top: 0;
-  margin: 0 5px;
+  background: #fb924b;
+  margin: 0 4px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.5s ease;
 }
-.creadores .creadores-box .perfil .info .icon-color i:hover {
-  color: #FA7921;
-}
-
-.nombre {
-  margin-top: -15px;
-  margin-bottom: 0;
+.button label.active {
+  width: 35px;
 }
 
-.pag {
-  margin-bottom: 30px;
+#one:checked ~ .button .one {
+  width: 35px;
+}
+#one:checked ~ .button .two {
+  width: 15px;
 }
 
-h1 {
-  padding: 30px;
-  text-align: center;
+input[type=radio] {
+  display: none;
+}
+
+.contacto {
   color: #24252a;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 .content {
@@ -352,6 +394,7 @@ a {
 footer {
   width: auto;
   padding: 20px;
+  margin-top: auto;
   background-color: #24252a;
   display: flex;
   justify-content: space-between;
@@ -411,15 +454,32 @@ i:hover {
   text-align: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   body {
     background-color: #24252a;
     color: #edf0f1;
   }
   .card {
-    width: 50px;
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-fluid-c {
+    width: auto;
+  }
+  .card-r {
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .titulo {
     font-size: 30px;
@@ -430,5 +490,18 @@ i:hover {
   .content-coment {
     font-size: 20px;
     color: #edf0f1;
+  }
+  .main-card .cards .card-cre {
+    margin: 20px 0 10px 0;
+    width: calc(50% - 10px);
+  }
+  .contacto {
+    color: #FDFFFC;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .main-card .cards .card-cre {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
