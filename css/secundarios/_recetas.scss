@@ -6,7 +6,7 @@
 	padding: 30px;
 	margin: 30px 200px;
 	text-align: center;
-
+	box-shadow: 0 0 20px 0 rgba(12, 22, 24, .3);
 }
 
 .card-r {
@@ -42,6 +42,11 @@
 	text-align: center;
 }
 
+.img-int {
+	border-radius: 10px;
+	box-shadow: 0 0 20px 0 rgba(12, 22, 24, .3);
+}
+
 .content-coment {
 	color: $color_1;
 	text-align: justify;
@@ -63,4 +68,5 @@
 	margin-bottom: 50px;
 	padding: 20px;
 	border-radius: 16px;
+	box-shadow: 0 0 20px 0 rgba(12, 22, 24, .3);
 }

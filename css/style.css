@@ -85,6 +85,7 @@ button:focus {
   padding: 30px;
   margin: 30px 200px;
   text-align: center;
+  box-shadow: 0 0 20px 0 rgba(12, 22, 24, 0.3);
 }
 
 .card-r {
@@ -120,6 +121,11 @@ button:focus {
   text-align: center;
 }
 
+.img-int {
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgba(12, 22, 24, 0.3);
+}
+
 .content-coment {
   color: #24252a;
   text-align: justify;
@@ -141,6 +147,7 @@ button:focus {
   margin-bottom: 50px;
   padding: 20px;
   border-radius: 16px;
+  box-shadow: 0 0 20px 0 rgba(12, 22, 24, 0.3);
 }
 
 .container-cre {
@@ -275,10 +282,19 @@ input[type=radio] {
 }
 
 .contacto {
-  color: #24252a;
+  color: #edf0f1;
+  background-color: #fb924b;
+  margin: 0 250px;
+  margin-bottom: 60px;
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 30px;
   text-align: center;
   justify-content: center;
-  margin-bottom: 30px;
+  box-shadow: 0 0 20px 0 rgba(12, 22, 24, 0.3);
+}
+.contacto > * {
+  padding: 2em;
 }
 
 .content {
@@ -307,14 +323,16 @@ a {
 .contact-wrapper {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
-}
-.contact-wrapper > * {
-  padding: 2em;
 }
 
 .formulario {
   background: #222222;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 20px 0 rgba(12, 22, 24, 0.3);
+}
+.formulario > * {
+  padding: 2em;
 }
 .formulario form {
   display: grid;
@@ -371,13 +389,19 @@ a {
 
 .contact-info {
   background: #252525;
+  border-radius: 30px;
+  margin-top: 20px;
+  box-shadow: 0 0 20px 0 rgba(12, 22, 24, 0.3);
+}
+.contact-info > * {
+  padding: 1em;
 }
 .contact-info h4 {
-  text-align: left;
+  text-align: center;
   margin: 1em;
 }
 .contact-info ul {
-  text-align: left;
+  text-align: center;
   margin: 1em;
   list-style: none;
   padding: 0;
@@ -389,7 +413,7 @@ a {
   color: rgb(251, 146, 75);
 }
 .contact-info p {
-  text-align: left;
+  text-align: justify;
   margin: 1em;
 }
 
@@ -498,10 +522,15 @@ i:hover {
     color: #edf0f1;
     margin-left: 40px;
     margin-right: 40px;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.2);
   }
   .img-int {
-    width: 450px;
+    width: 400px;
     border-radius: 20px;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
   }
   .content-coment {
     font-size: 20px;
@@ -510,6 +539,7 @@ i:hover {
   .content-rec {
     margin-left: 40px;
     margin-right: 40px;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.2);
   }
   .main-card .cards .card-cre {
     margin: 20px 0 10px 0;
@@ -518,8 +548,15 @@ i:hover {
   .contacto {
     color: #FDFFFC;
     text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 }
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 @media (max-width: 600px) {
   .main-card .cards .card-cre {
     width: 100%;
