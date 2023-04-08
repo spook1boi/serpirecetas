@@ -1,4 +1,94 @@
-@media (max-width:768px) {
+@media (min-width:768px) and (max-width:1023px){
+	body {
+		background-color: $background-color_7;
+		color: $color_2;
+	}
+	.card {
+		margin: 0;
+		margin-right: auto;
+		margin-left: auto;
+		width: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.container-fluid-c {
+		width: auto;
+	}
+
+	.card-r {
+		margin: 0;
+		margin-right: auto;
+		margin-left: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.titulo {
+		font-size: 25px;
+		background-color: $background-color_6;
+		color: $color_2;
+		margin-left: 40px;
+		margin-right: 40px;
+		box-shadow: 0 0 20px 0 rgba(255,255,255, .2);
+	}
+
+	.img-int {
+		width: 400px;
+		border-radius: 20px;
+		align-items: center;
+		margin-left: 10px;
+		margin-right: 10px;
+		box-shadow: 0 0 20px 0 rgba(255,255,255, .3);
+	}
+
+	.content-coment {
+		font-size: 20px;
+		color: $color_2;
+	}			
+
+	.content-rec {
+		margin-left: 40px;
+		margin-right: 40px;
+		box-shadow: 0 0 20px 0 rgba(255,255,255, .2);
+	}
+		
+	.main-card {
+		.cards {
+			.card-cre {
+				margin: 20px 0 10px 0;
+				width: calc(100% / 2 - 10px);
+			}
+		}
+	}
+	
+	.contacto {
+		color: $color_7;
+		text-align: center;
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+}
+	.contact-wrapper {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+@media (max-width: 600px) {
+	.main-card {
+		.cards {
+			.card-cre {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media (max-width:767px){
 	body {
 		background-color: $background-color_7;
 		color: $color_2;
